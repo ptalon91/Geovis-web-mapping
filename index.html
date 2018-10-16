@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Balade dans la vieille ville de Montreux</title>
+	
+	<meta charset="utf-8" />
+	
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+	
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+	<script src='lib/wax.leaf.js' type='text/javascript'></script>
+	<script src="lib/L.Wax.js"></script>
+	<script src="lib/TileLayer.Common.js"></script>
+
+</head>
+
+<body id="index" class="home">
+
+ <div id="global">
+
+	<div id="backgroundSup">
+
+	</div>
+
+	<header id="mainHeader" class="body">	
+
+ 		 <h1>Montreux - Balade dans la vieille ville</h1>
+			
+	</header>
+
+
+	<section id="map" class="body">
+		<div>
+	 		<script src="script.js"></script>
+		</div>
+	</section>
+
+	<section id="commandes">
+	
+		<div id='centrer' onclick='centrer();'>Recentrer la carte</div>
+	
+		<div id='legende'>
+		<table id="leg">
+			<tr>
+			 <th id="imgleg"><img src="img/Auto.png"</th>
+			 <th id="nomleg" >Autoroutes</th>
+			</tr>
+			<tr>
+			 <th id="imgleg"><img src="img/route.png"</th>
+			 <th id="nomleg" >Routes</th>
+			</tr>
+			<tr>
+			 <th id="imgleg"><img src="img/rail.png"</th>
+			 <th id="nomleg" >Chemin de fer</th>
+			</tr>
+			<tr>
+			 <th id="imgleg"><img src="img/bat.png"</th>
+			 <th id="nomleg" >Bâtiments</th>
+			</tr>
+			<tr>
+			 <th id="imgleg"><img src="img/forets.png"</th>
+			 <th id="nomleg" >Forêts</th>
+			</tr>
+
+		</table>
+
+		</div>
+	
+	</section>
+
+
+	<section id="description" class="body">	
+
+			<div id="info_marqueur" class="texte">
+			<header><h2>Le parcours</h2></header>
+			<p id=descr>Cet itinéraire vous fera parcourir et admirer en quelques étapes les curiosités principales de la vieille ville de Montreux ainsi que de somptueux panoramas donnant sur le lac Léman et les Alpes.</p>
+			</div>
+	
+	</section>
+
+	<section id="postes" class="body">
+		<table id="poste">
+			<tr>
+			 <th id="etapes" onclick='centrer1();'>Poste 1</th>
+			 <th id="etapes" onclick='centrer4();'>Poste 4</th>
+			</tr>
+			<tr>
+			 <th id="etapes" onclick='centrer2();'>Poste 2</th>
+			 <th id="etapes" onclick='centrer5();'>Poste 5</th>
+			</tr>
+			<tr>
+			 <th id="etapes" onclick='centrer3();'>Poste 3</th>
+			 <th id="etapes" onclick='centrer6();'>Poste 6</th>
+			</tr>	
+		</table>
+	</section>
+
+
+	<section id="photodisplay" class="body">
+		<div>
+			<img src="img/mtx.jpg">
+		</div>
+	</section>
+
+
+	<section id="mainFooter"> 
+
+		<footer>
+		 	<table id="mfooter"><tr>
+			 <th id="annee">Automne 2015</th>
+			 <th id="uni">Université de Lausanne</th>
+			 <th id="auteur">Patrick Talon</th>
+		 	</tr></table>
+		</footer>
+
+	</section>
+
+
+	<!-- ceci est un commentaire sur 1 ligne -->
+	<!-- Même
+	sur deux -->
+
+ </div>
+</body>
+</html>
